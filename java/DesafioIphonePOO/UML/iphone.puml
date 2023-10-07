@@ -1,0 +1,31 @@
+@startuml DiagramaDeClasses
+
+skinparam classAttributeIconSize 0
+
+interface Navegador {
+    +exibirPagina(url : String): void
+    +atualizarPagina(): void
+    +adicioNovaAba(url : String): void
+}
+interface AparelhoTelefonico {
+    +ligar(numero : Double): void
+    +atender(): void
+    +iniciarCorrerioVoz(): void
+}
+interface ReprodutorMusical {
+    +tocar(musica : String): void
+    +pausar(): void
+    +selecionarMusica(musica : String): void
+}
+
+class Iphone {
+    -reprodutorMusical: ReprodutorMusical
+    -navegador: Navegador
+    -telefone: AparelhoTelefonico
+}
+
+Iphone --|> Navegador : <<interface>>
+Iphone --|> AparelhoTelefonico : <<interface>>
+Iphone --|> ReprodutorMusical : <<interface>>
+
+@enduml
