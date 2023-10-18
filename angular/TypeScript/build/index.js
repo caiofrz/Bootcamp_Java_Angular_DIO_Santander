@@ -1,22 +1,26 @@
 "use strict";
-let number = 1;
-let string = "1";
-let bool = true;
-let float = 1.9;
-let nulo = null;
-let indefinido = undefined;
+const number = 1;
+const string = "1";
+const bool = true;
+const float = 1.9;
+const nulo = null;
+const indefinido = undefined;
 let vazio;
-let x = "any";
-let objeto = {
+const x = "any";
+const objeto = {
     name: "Hulk",
     vulgo: "Hulk Smash",
 };
-const heroi = { name: "Hulk", vulgo: "Hulk Smash" };
-console.log(heroi);
-let array = ["x", "y"];
-let array1 = ["x", 2, false];
-let array2 = ["x", "y"];
-let array3 = ["x", 2];
-let tuplas = ["x", 2, 3];
-let data = new Date();
+const heroi1 = { name: "Hulk", vulgo: "Hulk Smash" };
+console.log(heroi1);
+const array = ["x", "y"];
+const array1 = ["x", 2, false];
+const array2 = ["x", "y"];
+const array3 = ["x", 2];
+const tuplas = ["x", 2, 3];
+const data = new Date();
 console.log(data.toString());
+function somar(x, y) {
+    return x + y;
+}
+const soma = somar(1, 2);
