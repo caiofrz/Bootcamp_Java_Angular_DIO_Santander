@@ -1,0 +1,6 @@
+<app-title></app-title>
+<app-card *ngIf="isAliveCard; else container"></app-card>
+
+<ng-template #container>
+	<p>CONTAINER</p>
+</ng-template>
