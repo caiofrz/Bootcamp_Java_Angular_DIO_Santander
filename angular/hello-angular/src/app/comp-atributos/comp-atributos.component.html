@@ -1,0 +1,19 @@
+<p ngClass="{{ style }}">comp-atributos works!</p>
+<button (click)="trocar()">trocar cor</button>
+
+<h1 [ngStyle]="{ background: corFundo }">Angular</h1>
+
+<input type="text" [(ngModel)]="item" id="" />
+<button (click)="addLista(item)">Add</button>
+<p>{{ item }}</p>
+
+<ul>
+	<li *ngFor="let i of lista">{{ i }}</li>
+</ul>
+
+
+<ng-template ngIf="true">
+	<a href="#">Fim</a>
+</ng-template>
+
+<ng-content select="*"></ng-content>
