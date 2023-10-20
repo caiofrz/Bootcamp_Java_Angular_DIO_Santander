@@ -1,0 +1,13 @@
+<app-comp-atributos>
+	<h2>Vim de fora</h2>
+	<p>Vim de fora</p>
+</app-comp-atributos>
+
+<app-title></app-title>
+<app-card *ngIf="isAliveCard; else container"></app-card>
+
+<ng-template #container>
+	<p>CONTAINER</p>
+</ng-template>
+
+<app-input></app-input>
